@@ -22,9 +22,7 @@ body {
   font-size: 14px;
 }
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,11 +30,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .link-list {
@@ -62,6 +55,10 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+img {
+  display: block;
+}
+
 header {
   border-bottom: 1px solid var(--border-color);
 }
@@ -70,7 +67,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
 
 /*Logo*/
@@ -128,8 +124,7 @@ header {
 /*Auth-nav*/
 .auth-nav {
   display: flex;
-  justify-content: center;
-
+  margin-left: auto;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -147,6 +142,8 @@ header {
 .main-index {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   font-weight: 900;
   font-size: 44px;
@@ -159,7 +156,6 @@ header {
 }
 .main-index-title {
   margin-top: 0;
-  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -198,14 +194,17 @@ header {
   margin-bottom: 0;
 }
 
+.features-li {
+  width: 270px;
+}
+
 .features-li:not(:last-child) {
   margin-right: 30px;
 }
 
 .features-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   line-height: 1.14;
@@ -235,9 +234,7 @@ header {
 }
 .work-list {
   display: flex;
-  justify-content: center;
   margin-top: 0;
-  margin-bottom: 94px;
 }
 
 .work-list-li:not(:last-child) {
@@ -336,6 +333,7 @@ header {
 }
 
 .button-index {
+  margin-top: 30px;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;

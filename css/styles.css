@@ -25,10 +25,16 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-work {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 
@@ -189,7 +195,6 @@ header {
 
 .features-list {
   display: flex;
-  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -247,7 +252,6 @@ header {
 }
 .team-list {
   display: flex;
-  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -262,7 +266,6 @@ header {
 }
 .team-list-name {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -273,12 +276,16 @@ header {
 .team-list-position {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.19;
 
   color: var(--secondary-text-color);
+}
+
+.team-name-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*Footer*/
@@ -287,7 +294,7 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address {
+address {
   margin-top: 20px;
   margin-bottom: 0;
 }
@@ -386,7 +393,7 @@ header {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 15px;
+  padding-left: 0;
 
   text-decoration: none;
   list-style: none;
@@ -398,7 +405,6 @@ header {
 
   box-sizing: border-box;
   background-color: var(--white-color);
-  border: 1px solid var(--portfolio-border-color);
 }
 .portfolio-list-li:nth-child(3n) {
   margin-right: 0;
@@ -408,7 +414,7 @@ header {
 }
 
 .portfolio-list-name {
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -419,10 +425,15 @@ header {
 }
 
 .portfolio-list-type {
-  margin: 0 24px 20px 24px;
-
   font-size: 16px;
   line-height: 1.87;
 
   color: var(--secondary-text-color);
+}
+
+.portfolio-div {
+  padding: 20px 24px;
+  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-left: 1px solid var(--portfolio-border-color);
 }
